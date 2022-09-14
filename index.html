@@ -69,6 +69,35 @@
                 }
  
             }
-                
+            function keyPush(event){
+ 
+ switch (event.keyCode) {
+     case 37: // Left
+         vx = -vel;
+         vy = 0;
+         break;
+     case 38: // up
+         vx = 0;
+         vy = -vel;
+         break;
+     case 39: // right
+         vx = vel;
+         vy = 0;
+         break;
+     case 40: // down
+         vx = 0;
+         vy = vel;
+         break;          
+     default:
+         
+         break;
+ }
+
+
+}
+
+}
+
+</script>
 </body>
 </html>
