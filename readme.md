@@ -1,32 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Jogo da cobrinha</title>
-</head>
-<body>
- 
-    <canvas id="stage" width="600" height="600"></canvas>
-    <script type="text/javascript">
-        
-        window.onload = function(){
- 
-            var stage = document.getElementById('stage');
-            var ctx = stage.getContext("2d");
-            document.addEventListener("keydown", keyPush);
-            setInterval(game, 80);
- 
-            const vel = 1;
- 
-            var vx = vy = 0;
-            var px =10;
-            var py = 15;
-            var tp = 30;
-            var qp = 20;
-            var ax=ay=15;
-            var trail = [];
-            tail = 5;
- 
-            function game(){
+# Jogo da Cobrinha
+Esse jogo é uma versão do jogo da  cobrinha do nokia.
+Esse jogo consiste numa "cobrinha" pegando alimento e aumentando de tamanho e quando se bater voltar ao tamanho normal
+
+## Tecnologia Usada
+**HTML** Linguagem de marcação usado na contrução de páginas Web
+
+##  Funções usadas 
+ ### **game**
+  
+   ````function game(){
                 px += vx;
                 py += vy;
                 if (px <0) {
@@ -69,7 +51,11 @@
                 }
  
             }
-            function keyPush(event){
+     
+        
+````
+### **keyPush**
+ ````function keyPush(event){
  
  switch (event.keyCode) {
      case 37: // Left
@@ -95,9 +81,20 @@
 
 
 }
+````
+## Como Rodar o Jogo
+Instale o codigo e abra **""index.html""**.
 
-}
+## Imagens da Tela
+Tela 1: Início
 
-</script>
-</body>
-</html>
+![tela 1](/Sem%20t%C3%ADtulo.png)
+
+Tela 2: Cobra em movimento
+
+![tela 2](/Sem%20t%C3%ADtulo2.png)
+
+## Referencia
+Aula do prof Carlos Emilio para realização do Readme[https://www.youtube.com/watch?v=tnQ8Uyilwus&t=194s]
+
+Aula para realização do código [https://www.youtube.com/watch?v=Hua1OSXitdQ]
